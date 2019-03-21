@@ -2,16 +2,7 @@
 
 {% block container %}
 	<div class="hero-white">
-		<div class="header clearfix">
-			<a href="index.html" class="logo"></a>
-			<ul class="menu">
-				<li><a href="/">домой</a></li>
-				<li><a href="/products" class="active">продукты</a></li>
-				<li><a href="/contact">контакты</a></li>
-			</ul>
-			<a href="#" class="search"></a>
-			<a href="#" class="basket"></a>
-		</div>
+		{% include 'mainapp/includes/inc__main_menu.html' %}
 	</div>
 
 	<div class="details">

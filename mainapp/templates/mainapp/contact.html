@@ -2,21 +2,11 @@
 
 {% block css %}
 	{{ block.super }}
-	<link rel="stylesheet" type="text/css" href="/static/styles/contact_style.css">
 {% endblock %}
 
 {% block container %}
 	<div class="hero">
-		<div class="header clearfix">
-			<a href="index.html" class="logo"></a>
-			<ul class="menu">
-				<li><a href="/">домой</a></li>
-				<li><a href="/products">продукты</a></li>
-				<li><a href="/contact" class="active">контакты</a></li>
-			</ul>
-			<a href="#" class="search"></a>
-			<a href="#" class="basket"></a>
-		</div>
+		{% include 'mainapp/includes/inc__main_menu.html' %}
 		<h1>наши контакты</h1>
 	</div>
 
