@@ -36,6 +36,7 @@ def contact(request):
         },
     ]
     context = {
+        # 'page_title': 'контакты'.title(), # НЕ НАДО!
         'page_title': 'контакты',
         'locations': locations,
     }
