@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from mainapp.models import ProductCategory, Product
+from django.urls import reverse
 
 
 def index(request):
@@ -17,6 +18,12 @@ def products(request):
         'products': products
     }
     return render(request, 'mainapp/products.html', context)
+
+
+def category(request, pk):
+    print(f'выбрали {pk}')
+    # return HttpResponseRedirect('/products/')
+    return HttpResponseRedirect(reverse('main:products'))
 
 
 def contact(request):
