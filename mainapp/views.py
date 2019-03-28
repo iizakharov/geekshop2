@@ -22,7 +22,6 @@ def products(request):
 
 def category(request, pk):
     print(f'выбрали {pk}')
-    # return HttpResponseRedirect('/products/')
     return HttpResponseRedirect(reverse('main:products'))
 
 
