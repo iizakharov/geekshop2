@@ -1,0 +1,3 @@
+superuser:
+	django
+	geekbrains
