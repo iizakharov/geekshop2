@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
 from mainapp.models import ProductCategory, Product
 from django.urls import reverse
 
@@ -11,18 +11,35 @@ def index(request):
 
 
 def products(request):
+    links_menu = ProductCategory.objects.all()
     products = Product.objects.all()
 
     context = {
         'page_title': 'каталог',
-        'products': products
+        'products': products,
+        'links_menu': links_menu
     }
     return render(request, 'mainapp/products.html', context)
 
 
 def category(request, pk):
-    print(f'выбрали {pk}')
-    return HttpResponseRedirect(reverse('main:products'))
+    links_menu = ProductCategory.objects.all()
+
+    if int(pk) == 0:
+        category = {'name': 'все'}
+        products = Product.objects.all().order_by('price')
+    else:
+        category = get_object_or_404(ProductCategory, pk=pk)
+        products = category.product_set.order_by('price')
+
+    context = {
+        'title': 'продукты',
+        'links_menu': links_menu,
+        'category': category,
+        'products': products,
+    }
+
+    return render(request, 'mainapp/products_list.html', context)
 
 
 def contact(request):
