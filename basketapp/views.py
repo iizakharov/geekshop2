@@ -9,7 +9,6 @@ def index(request):
 def add(request, pk):
     product = get_object_or_404(Product, pk=pk)
     basket = Basket.objects.filter(user=request.user, product=product).first()
-    # basket = request.user.basket.filter(product=product).first()
 
     if not basket:
         basket = Basket(user=request.user, product=product)

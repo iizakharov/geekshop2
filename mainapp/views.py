@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
 from mainapp.models import ProductCategory, Product
 from basketapp.models import Basket
 from django.urls import reverse
+import random
 
 
 def get_basket(request):
@@ -9,6 +10,14 @@ def get_basket(request):
         return request.user.basket.all()
     else:
         return []
+
+
+def get_hot_product():
+    return random.choice(Product.objects.all())
+
+
+def get_same_products(hot_product):
+    return hot_product.category.product_set.exclude(pk=hot_product.pk)
 
 
 def index(request):
@@ -21,11 +30,14 @@ def index(request):
 
 def products(request):
     links_menu = ProductCategory.objects.all()
-    products = Product.objects.all()
+
+    hot_product = get_hot_product()
+    same_products = get_same_products(hot_product)
 
     context = {
         'page_title': 'каталог',
-        'products': products,
+        'hot_product': hot_product,
+        'same_products': same_products,
         'links_menu': links_menu,
         'basket': get_basket(request),
     }
