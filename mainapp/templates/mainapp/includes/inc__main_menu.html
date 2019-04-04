@@ -36,7 +36,7 @@
     </ul>
     <!--{{ request.resolver_match }}-->
     <a href="#" class="search"></a>
-    <a href="#" class="basket">
+    <a href="{% url 'basket:index' %}" class="basket">
         <span>
             {% if basket %}
                 {{ basket.0.total_cost|floatformat:0 }} руб
