@@ -1,0 +1,50 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block container %}
+    <div class="hero-white">
+		{% include 'mainapp/includes/inc__main_menu.html' %}
+	</div>
+
+	<div class="details">
+		{% include 'mainapp/includes/inc__category_menu.html' %}
+
+        <div class="details-products">
+            <div class="details-slider">
+                <div class="slider-product">
+                    <img src="/media/{{ object.image }}" alt="{{ object.short_desc }}">
+                </div>
+                <div class="slider-control">
+                    <div class="block">
+                        <a href="#"><img src="/media/{{ object.image }}" alt="вариант 1">
+                            <div class="text"></div>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="#"><img src="/media/{{ object.image }}" alt="вариант 2">
+                            <div class="text"></div>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="#"><img src="/media/{{ object.image }}" alt="вариант 3">
+                            <div class="text"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <h3 class="big-bold">{{ object.name }}</h3>
+                <br>
+                <p class="price"> {{ object.price }} <span>руб</span></p>
+                <a href="{% url 'basket:add' object.pk %}" class="red-button">
+                    заказать 
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <div class="description-text">
+                    {{ object.description }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
