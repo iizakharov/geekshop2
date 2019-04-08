@@ -4,7 +4,7 @@
 
 {% block container %}
     <div class="users_list">
-        <a href="{#% url 'myadmin:user_create' %#}" class="btn btn-primary new_user">
+        <a href="{% url 'myadmin:shopuser_create' %}" class="btn btn-primary new_user">
             новый пользователь
         </a>
         {% for object in objects %}
@@ -13,10 +13,10 @@
                      alt="{{ object.username }}">
                 <div class="user_role">
                     {% if object.is_superuser %}администратор{% else %}пользователь{% endif %}
-                    <a href="{#% url 'myadmin:user_update' object.pk %#}" class="btn btn-primary">
+                    <a href="{% url 'myadmin:shopuser_update' object.pk %}" class="btn btn-primary">
                         редактировать
                     </a>
-                    <a href="{#% url 'myadmin:user_delete' object.pk %#}" class="btn btn-danger">
+                    <a href="{% url 'myadmin:shopuser_delete' object.pk %}" class="btn btn-danger">
                         удалить
                     </a>
                 </div>
