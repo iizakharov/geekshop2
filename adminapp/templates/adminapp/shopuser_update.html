@@ -1,6 +1,9 @@
 {% extends 'authapp/base.html' %}
 {% load static %}
 
+{% block menu %}
+{% endblock %}
+
 {% block container %}
     <form class="form-horizontal" method="post" enctype="multipart/form-data">
         {% csrf_token %}
