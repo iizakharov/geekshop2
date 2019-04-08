@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 from authapp.models import ShopUser
+from mainapp.models import ProductCategory
 
 
 def index(request):
@@ -12,3 +13,13 @@ def index(request):
     }
 
     return render(request, 'adminapp/index.html', context)
+
+
+def categories(request):
+    object_list = ProductCategory.objects.all()
+    context = {
+        'title': 'админка/категории',
+        'object_list': object_list
+    }
+    return render(request, 'adminapp/productcategory_list.html', context)
+
