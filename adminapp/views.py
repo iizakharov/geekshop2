@@ -4,7 +4,8 @@ from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse, reverse_lazy
 
 from django.views.generic.list import ListView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic.detail import DetailView
 from django.utils.decorators import method_decorator
 
 from adminapp.forms import ShopUserCreationAdminForm, ShopUserUpdateAdminForm, ProductCategoryEditForm, ProductEditForm
@@ -150,17 +151,28 @@ class ProductCategoryUpdateView(UpdateView):
         return context
 
 
-def productcategory_delete(request, pk):
-    object = get_object_or_404(ProductCategory, pk=pk)
-    if request.method == 'POST':
-        object.is_active = False
-        object.save()
-        return HttpResponseRedirect(reverse('myadmin:categories'))
-    context = {
-        'title': 'категории/удаление',
-        'object': object
-    }
-    return render(request, 'adminapp/productcategory_delete.html', context)
+# def productcategory_delete(request, pk):
+#     object = get_object_or_404(ProductCategory, pk=pk)
+#     if request.method == 'POST':
+#         object.is_active = False
+#         object.save()
+#         return HttpResponseRedirect(reverse('myadmin:categories'))
+#     context = {
+#         'title': 'категории/удаление',
+#         'object': object
+#     }
+#     return render(request, 'adminapp/productcategory_delete.html', context)
+
+
+class ProductCategoryDeleteView(DeleteView):
+    model = ProductCategory
+    success_url = reverse_lazy('myadmin:categories')
+
+    def delete(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        self.object.is_active = False
+        self.object.save()
+        return HttpResponseRedirect(self.get_success_url())
 
 
 def product_create(request, pk):
@@ -181,12 +193,16 @@ def product_create(request, pk):
     return render(request, 'adminapp/product_update.html', context)
 
 
-def product_read(request, pk):
-    context = {
-        'title': 'продукт/подробнее',
-        'object': get_object_or_404(Product, pk=pk)
-    }
-    return render(request, 'adminapp/product_read.html', context)
+# def product_read(request, pk):
+#     context = {
+#         'title': 'продукт/подробнее',
+#         'object': get_object_or_404(Product, pk=pk)
+#     }
+#     return render(request, 'adminapp/product_read.html', context)
+
+
+class ProductDetailView(DetailView):
+    model = Product
 
 
 def product_update(request, pk):
