@@ -3,21 +3,29 @@ from django.contrib.auth.decorators import user_passes_test
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
 
+from django.views.generic.list import ListView
+from django.utils.decorators import method_decorator
+
 from adminapp.forms import ShopUserCreationAdminForm, ShopUserUpdateAdminForm, ProductCategoryEditForm, ProductEditForm
 from authapp.models import ShopUser
 from mainapp.models import ProductCategory, Product
 
 
-@user_passes_test(lambda x: x.is_superuser)
-def index(request):
-    users_list = ShopUser.objects.all().order_by('-is_active', '-is_superuser',
-                                                 '-is_staff', 'username')
-    context = {
-        'title': 'админка/пользователи',
-        'objects': users_list
-    }
+# @user_passes_test(lambda x: x.is_superuser)
+# def index(request):
+#     users_list = ShopUser.objects.all().order_by('-is_active', '-is_superuser',
+#                                                  '-is_staff', 'username')
+#     context = {
+#         'title': 'админка/пользователи',
+#         'objects': users_list
+#     }
+#
+#     return render(request, 'adminapp/index.html', context)
 
-    return render(request, 'adminapp/index.html', context)
+
+class UsersListView(ListView):
+    model = ShopUser
+    # template_name = 'adminapp/index.html'
 
 
 @user_passes_test(lambda x: x.is_superuser)
