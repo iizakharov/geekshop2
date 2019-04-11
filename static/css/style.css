@@ -434,8 +434,17 @@ html, body {
     margin: 25px auto;
 }
 
-.basket_container button {
-    margin-left: 25px;
+.basket_list .basket_record button {
+    margin-top: 50px;
+    margin-left: 390px;
+    width: 150px;
+    position: absolute;
+    display: block;
+    float: left;
+}
+
+.basket_list button {
+    margin-left: 45px;
     width: 150px;
     display: block;
     float: left;

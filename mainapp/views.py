@@ -1,8 +1,11 @@
+import random
+
 from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
+from django.urls import reverse
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 from mainapp.models import ProductCategory, Product
 from basketapp.models import Basket
-from django.urls import reverse
-import random
 
 
 def get_basket(request):
@@ -32,13 +35,24 @@ def index(request):
     return render(request, 'mainapp/index.html', context)
 
 
-def category(request, pk):
+def category(request, pk, page=1):
     if int(pk) == 0:
-        category = {'name': 'все'}
+        category = {
+            'pk': 0,
+            'name': 'все',
+        }
         products = Product.objects.filter(is_active=True, category__is_active=True).order_by('price')
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
         products = category.product_set.filter(is_active=True).order_by('price')
+
+    paginator = Paginator(products, 2)
+    try:
+        products = paginator.page(page)
+    except PageNotAnInteger:
+        products = paginator.page(1)
+    except EmptyPage:
+        products = paginator.page(paginator.num_pages)
 
     context = {
         'title': 'продукты',
