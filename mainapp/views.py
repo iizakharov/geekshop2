@@ -13,11 +13,15 @@ def get_basket(request):
 
 
 def get_hot_product():
-    return random.choice(Product.objects.all())
+    return random.choice(Product.objects.filter(is_active=True))
 
 
 def get_same_products(hot_product):
-    return hot_product.category.product_set.exclude(pk=hot_product.pk)
+    return hot_product.category.product_set.filter(is_active=True).exclude(pk=hot_product.pk)
+
+
+def get_menu():
+    return ProductCategory.objects.filter(is_active=True)
 
 
 def index(request):
@@ -29,18 +33,16 @@ def index(request):
 
 
 def category(request, pk):
-    links_menu = ProductCategory.objects.all()
-
     if int(pk) == 0:
         category = {'name': 'все'}
-        products = Product.objects.all().order_by('price')
+        products = Product.objects.filter(is_active=True, category__is_active=True).order_by('price')
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
-        products = category.product_set.order_by('price')
+        products = category.product_set.filter(is_active=True).order_by('price')
 
     context = {
         'title': 'продукты',
-        'links_menu': links_menu,
+        'links_menu': get_menu(),
         'category': category,
         'products': products,
         'basket': get_basket(request),
@@ -55,7 +57,7 @@ def products(request):
 
     context = {
         'page_title': 'каталог',
-        'links_menu': ProductCategory.objects.all(),
+        'links_menu': get_menu(),
         'basket': get_basket(request),
         'hot_product': hot_product,
         'same_products': same_products,
@@ -66,7 +68,7 @@ def products(request):
 def product(request, pk):
     context = {
         'title': 'продукт',
-        'links_menu': ProductCategory.objects.all(),
+        'links_menu': get_menu(),
         'basket': get_basket(request),
         'object': get_object_or_404(Product, pk=pk),
     }

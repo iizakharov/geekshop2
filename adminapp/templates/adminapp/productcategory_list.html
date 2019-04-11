@@ -3,7 +3,7 @@
 
 {% block container %}
 <div class="categories_list">
-    <a href="{#% url 'myadmin:category_create' %#}"
+    <a href="{% url 'myadmin:productcategory_create' %}"
        class="btn btn-primary new_category">
         новая категория
     </a>
@@ -21,7 +21,7 @@
                class="btn btn-success">
                 редактировать
             </a>
-            <a href="{#% url 'myadmin:category_delete' object.pk %#}"
+            <a href="{% url 'myadmin:productcategory_delete' object.pk %}"
                class="btn btn-danger">
                 удалить
             </a>
