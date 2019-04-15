@@ -1,18 +1,9 @@
 import random
 
-from django.shortcuts import render, HttpResponseRedirect, get_object_or_404
-from django.urls import reverse
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from mainapp.models import ProductCategory, Product
-from basketapp.models import Basket
-
-
-def get_basket(request):
-    if request.user.is_authenticated:
-        return request.user.basket.all()
-    else:
-        return []
 
 
 def get_hot_product():
@@ -30,7 +21,6 @@ def get_menu():
 def index(request):
     context = {
         'page_title': 'главная',
-        'basket': get_basket(request)
     }
     return render(request, 'mainapp/index.html', context)
 
@@ -59,7 +49,6 @@ def category(request, pk, page=1):
         'links_menu': get_menu(),
         'category': category,
         'products': products,
-        'basket': get_basket(request),
     }
 
     return render(request, 'mainapp/products_list.html', context)
@@ -72,7 +61,6 @@ def products(request):
     context = {
         'page_title': 'каталог',
         'links_menu': get_menu(),
-        'basket': get_basket(request),
         'hot_product': hot_product,
         'same_products': same_products,
     }
@@ -83,7 +71,6 @@ def product(request, pk):
     context = {
         'title': 'продукт',
         'links_menu': get_menu(),
-        'basket': get_basket(request),
         'object': get_object_or_404(Product, pk=pk),
     }
     return render(request, 'mainapp/product.html', context)
@@ -113,6 +100,5 @@ def contact(request):
     context = {
         'page_title': 'контакты',
         'locations': locations,
-        'basket': get_basket(request),
     }
     return render(request, 'mainapp/contact.html', context)
