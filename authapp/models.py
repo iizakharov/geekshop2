@@ -17,3 +17,19 @@ class ShopUser(AbstractUser):
 
     def is_activation_key_valid(self):
         return now() <= self.activation_key_expires
+
+
+class ShopUserProfile(models.Model):
+    MALE = 'M'
+    FEMALE = 'W'
+
+    GENDER_CHOICES = (
+        (MALE, 'МУЖСКОЙ'),
+        (FEMALE, 'ЖЕНСКИЙ'),
+    )
+
+    user = models.OneToOneField(ShopUser, primary_key=True, on_delete=models.CASCADE)
+    tagline = models.CharField(verbose_name='теги', max_length=128, blank=True)
+    aboutMe = models.TextField(verbose_name='о себе', max_length=512, blank=True)
+    gender = models.CharField(verbose_name='пол', max_length=1,
+                              choices=GENDER_CHOICES, blank=True)
