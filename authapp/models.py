@@ -3,6 +3,9 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.timezone import now
 from datetime import timedelta
 
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
 
 def activation_key_expires():
     return now() + timedelta(hours=48)
@@ -33,3 +36,10 @@ class ShopUserProfile(models.Model):
     aboutMe = models.TextField(verbose_name='о себе', max_length=512, blank=True)
     gender = models.CharField(verbose_name='пол', max_length=1,
                               choices=GENDER_CHOICES, blank=True)
+
+    @receiver(post_save, sender=ShopUser)
+    def create_user_profile(sender, instance, created, **kwargs):
+        if created:
+            ShopUserProfile.objects.create(user=instance)
+        else:
+            instance.shopuserprofile.save()

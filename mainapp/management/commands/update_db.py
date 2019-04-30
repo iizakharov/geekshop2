@@ -10,4 +10,6 @@ class Command(BaseCommand):
         for user in to_update:
             ShopUserProfile.objects.create(user=user)
 
+        # items = ShopUser.objects.all().only('pk', 'age')
+
 
