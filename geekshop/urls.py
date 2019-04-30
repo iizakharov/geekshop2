@@ -22,6 +22,8 @@ urlpatterns = [
     re_path(r'^basket/', include('basketapp.urls', namespace='basket')),
     re_path(r'^myadmin/', include('adminapp.urls', namespace='myadmin')),
 
+    re_path(r'^auth/verify/', include("social_django.urls", namespace="social")),
+
     # path('admin/', admin.site.urls),
 ]
 

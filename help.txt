@@ -1,7 +1,45 @@
-superuser:
+pip3 install django==2.1
+
+
+sudo apt install python3-venv
+
+python3 -m venv django2
+
+source django_2.0/bin/activate
+
+source ../../django2/bin/activate
+
+pip3 install django==2.0
+
+pip3 install pillow
+
+python manage.py runserver
+
+
+python -m smtpd -n -c DebuggingServer localhost:25
+
+
+.sh
+
+source /home/user/Django_2/django2/bin/activate
+
+
+login:
 	django
+pass:
 	geekbrains
 
-	
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_filter
+postgresql
+mysql
+
+
+mainapp
+
+
+
+alias rundjango="python3 manage.py runserver"
+alias virtdjango="source /home/user/Django_2/django2/bin/activate"
+alias makemigrations="python3 manage.py makemigrations"
+alias migrate="python3 manage.py migrate"
+
 
