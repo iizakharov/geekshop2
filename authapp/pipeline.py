@@ -33,6 +33,7 @@ def save_user_profile(backend, user, response, *args, **kwargs):
             fp.write(resp.content)
             file_name = url.split("/")[-1]
             user.avatar.save(file_name, files.File(fp))
+            # user.avatar = response['picture']
 
         if 'ageRange' in response.keys():
             minAge = response['ageRange']['min']

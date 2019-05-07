@@ -20,11 +20,26 @@
             </a>
         </li>
         {% if user.is_authenticated %}
-            <li>
-                <a href="{% url 'auth:update' %}">
-                    {{ user.first_name|default:'Пользователь' }}
-                </a>
-            </li>
+           <li>
+               <div class="dropdown">
+                   <a class="dropdown-toggle" href="" data-toggle="dropdown">
+                       {{ user.first_name|default:'Пользователь' }}
+                       <span class="caret"></span>
+                   </a>
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="{% url 'auth:update' %}">
+                               профиль
+                           </a>
+                       </li>
+                       <li>
+                           <a href="{% url 'ordersapp:index' %}">
+                               заказы
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+           </li>
         {% endif %}
         {% if user.is_superuser %}
             <li>
