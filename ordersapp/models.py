@@ -35,9 +35,34 @@ class Order(models.Model):
         verbose_name = 'заказ'
         verbose_name_plural = 'заказы'
 
+    def __str__(self):
+        return f'Текущий заказ: {self.pk}'
+
+    def get_total_quantity(self):
+        items = self.orderitems.values_list('quantity', flat=True)
+        return sum(items)
+
+    def get_product_type_quantity(self):
+        return self.orderitems.count()
+
+    def get_total_cost(self):
+        items = self.orderitems.select_related('product')
+        return sum([el.quantity * el.product.price for el in items])
+
+    # переопределяем метод, удаляющий объект
+    def delete(self):
+        # for item in self.orderitems.all():
+        #     item.product.quantity += item.quantity
+        #     item.product.save()
+
+        self.is_active = False
+        self.save()
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name="orderitems", on_delete=models.CASCADE)
     product = models.ForeignKey(Product, verbose_name='продукт', on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(verbose_name='количество', default=0)
 
+    def get_product_cost(self):
+        return self.product.price * self.quantity

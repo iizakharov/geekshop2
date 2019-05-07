@@ -1,9 +1,9 @@
 {% if object.status == 'FM' %}
-    <a href="{#% url 'orders:order_forming_complete' object.pk %#}"
+    <a href="{% url 'orders:order_forming_complete' object.pk %}"
        class="btn btn-warning btn-round form-control last">
         соверишть покупку
     </a>
-    <a href="{#% url 'orders:order_delete' object.pk %#}"
+    <a href="{% url 'orders:order_delete' object.pk %}"
        class="btn btn-default btn-round form-control last">
         удалить
     </a>
