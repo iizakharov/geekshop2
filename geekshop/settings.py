@@ -158,16 +158,20 @@ EMAIL_FILE_PATH = 'tmp/email-messages/'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.vk.VKOAuth2',
 )
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
 # загружаем секреты из файла
-with open('geekshop/google+.json', 'r') as f:
-    GOOGLE_PLUS = json.load(f)
+with open('geekshop/social_auth.json', 'r') as f:
+    SOCIAL_AUTH = json.load(f)
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = GOOGLE_PLUS['SOCIAL_AUTH_GOOGLE_OAUTH2_KEY']
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = GOOGLE_PLUS['SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET']
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = SOCIAL_AUTH['SOCIAL_AUTH_GOOGLE_OAUTH2_KEY']
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = SOCIAL_AUTH['SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET']
+
+SOCIAL_AUTH_VK_OAUTH2_KEY = SOCIAL_AUTH['SOCIAL_AUTH_VK_OAUTH2_KEY']
+SOCIAL_AUTH_VK_OAUTH2_SECRET = SOCIAL_AUTH['SOCIAL_AUTH_VK_OAUTH2_SECRET']
 
 LOGIN_ERROR_URL = '/'
 
