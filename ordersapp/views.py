@@ -58,9 +58,9 @@ class OrderItemsCreate(CreateView):
                 orderitems.save()
             self.request.user.basket.all().delete()
 
-        # # удаляем пустой заказ
-        # if self.object.get_total_cost() == 0:
-        #     self.object.delete()
+        # удаляем пустой заказ
+        if self.object.get_total_cost() == 0:
+            self.object.delete()
 
         return super().form_valid(form)
 
@@ -100,9 +100,9 @@ class OrderItemsUpdate(UpdateView):
                 orderitems.instance = self.object
                 orderitems.save()
 
-        # # удаляем пустой заказ
-        # if self.object.get_total_cost() == 0:
-        #     self.object.delete()
+        # удаляем пустой заказ
+        if self.object.get_total_cost() == 0:
+            self.object.delete()
 
         return super().form_valid(form)
 
