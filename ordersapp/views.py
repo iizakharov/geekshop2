@@ -7,6 +7,10 @@ from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
+from django.dispatch import receiver
+from django.db.models.signals import pre_save, pre_delete
+
+from basketapp.models import Basket
 from ordersapp.forms import OrderForm, OrderItemForm
 from ordersapp.models import Order, OrderItem
 
@@ -66,12 +70,12 @@ class OrderItemsCreate(CreateView):
 
 
 class OrderRead(DetailView):
-   model = Order
+    model = Order
 
-   def get_context_data(self, **kwargs):
-       context = super().get_context_data(**kwargs)
-       context['title'] = 'заказ/просмотр'
-       return context
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'заказ/просмотр'
+        return context
 
 
 class OrderItemsUpdate(UpdateView):
@@ -113,8 +117,26 @@ class OrderDelete(DeleteView):
 
 
 def order_forming_complete(request, pk):
-   order = get_object_or_404(Order, pk=pk)
-   order.status = Order.SENT_TO_PROCEED
-   order.save()
+    order = get_object_or_404(Order, pk=pk)
+    order.status = Order.SENT_TO_PROCEED
+    order.save()
 
-   return HttpResponseRedirect(reverse('ordersapp:index'))
+    return HttpResponseRedirect(reverse('ordersapp:index'))
+
+
+@receiver(pre_save, sender=OrderItem)
+@receiver(pre_save, sender=Basket)
+def product_quantity_update_save(sender, update_fields, instance, **kwargs):
+    if instance.pk:
+        instance.product.quantity -= instance.quantity - sender.get_item(instance.pk).quantity
+    else:
+        instance.product.quantity -= instance.quantity
+    instance.product.save()
+
+
+@receiver(pre_delete, sender=OrderItem)
+@receiver(pre_delete, sender=Basket)
+def product_quantity_update_delete(sender, instance, **kwargs):
+    # print(sender, type(instance))
+    instance.product.quantity += instance.quantity
+    instance.product.save()
