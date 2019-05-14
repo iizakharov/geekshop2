@@ -67,4 +67,9 @@ window.onload = function () {
         removed: deleteOrderItem
     });
 
+    $orderForm.on('change', 'select', function (event) {
+        var target = event.target;
+        console.log(target);
+    });
+
 };
