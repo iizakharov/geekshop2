@@ -15,6 +15,23 @@ window.onload = function () {
         priceArr[i] = (_price) ? _price : 0;
     }
 
+    if (!orderTotalQuantity) {
+        orderSummaryRecalc();
+    }
+
+    function orderSummaryRecalc() {
+        orderTotalQuantity = 0;
+        orderTotalCost = 0;
+
+        for (i = 0; i < totalForms; i++) {
+            orderTotalQuantity += quantityArr[i];
+            orderTotalCost += quantityArr[i] * priceArr[i];
+        }
+        $('.order_total_quantity').html(orderTotalQuantity.toString());
+        $('.order_total_cost').html(Number(orderTotalCost.toFixed(2)).toString());
+    }
+
+
     function orderSummaryUpdate(orderitemPrice, deltaQuantity) {
         deltaCost = orderitemPrice * deltaQuantity;
         orderTotalCost = Number((orderTotalCost + deltaCost).toFixed(2));
@@ -29,15 +46,6 @@ window.onload = function () {
         orderitemNum = parseInt(targetName.replace('orderitems-', '').replace('-quantity', ''));
         deltaQuantity = -quantityArr[orderitemNum];
         orderSummaryUpdate(priceArr[orderitemNum], deltaQuantity);
-    }
-
-    if (!orderTotalQuantity) {
-        for (i = 0; i < totalForms; i++) {
-            orderTotalQuantity += quantityArr[i];
-            orderTotalCost += quantityArr[i] * priceArr[i];
-        }
-        $('.order_total_quantity').html(orderTotalQuantity.toString());
-        $('.order_total_cost').html(Number(orderTotalCost.toFixed(2)).toString());
     }
 
     $orderForm.on('change', 'input[type="number"]', function (event) {
@@ -68,8 +76,33 @@ window.onload = function () {
     });
 
     $orderForm.on('change', 'select', function (event) {
-        var target = event.target;
-        console.log(target);
+        target = event.target;
+        orderitemNum = parseInt(target.name.replace('orderitems-', '').replace('-product', ''));
+        // orderitemProductPK = target.options[target.selectedIndex].value;
+        orderitemProductPK = target.value;
+
+        if (orderitemProductPK) {
+            $.ajax({
+                url: "/orders/product/" + orderitemProductPK + "/price/",
+                success: function (data) {
+                    if (data.price) {
+                        priceArr[orderitemNum] = parseFloat(data.price);
+                        if (isNaN(quantityArr[orderitemNum])) {
+                            quantityArr[orderitemNum] = 0;
+                        }
+                        priceHtml = '<span>' + data.price.toString().replace('.', ',') + '</span> руб';
+                        currentTR = $('.order_form table').find('tr:eq(' + (orderitemNum + 1) + ')');
+
+                        currentTR.find('td:eq(2)').html(priceHtml);
+
+                        if (isNaN(currentTR.find('input[type="number"]').val())) {
+                            currentTR.find('input[type="number"]').val(0);
+                        }
+                        orderSummaryRecalc();
+                    }
+                }
+            });
+        }
     });
 
 };
