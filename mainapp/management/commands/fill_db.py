@@ -24,10 +24,7 @@ class Command(BaseCommand):
         Product.objects.all().delete()
         for product in products:
             category_name = product['category']
-            # Получаем категорию по имени
             _category = ProductCategory.objects.get(name=category_name)
-            # _category = ProductCategory.objects.filter(name=category_name).first()
-            # Заменяем название категории объектом
             product['category'] = _category
             Product.objects.create(**product)
 

@@ -25,7 +25,7 @@ urlpatterns = [
 
     re_path(r'^auth/verify/', include("social_django.urls", namespace="social")),
 
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ]
 
 from django.conf import settings
@@ -33,3 +33,8 @@ from django.conf.urls.static import static
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    import debug_toolbar
+
+    urlpatterns += [re_path(r'^__debug__/', include(debug_toolbar.urls))]
