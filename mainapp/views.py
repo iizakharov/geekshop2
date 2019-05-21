@@ -71,6 +71,7 @@ def product(request, pk):
     context = {
         'title': 'продукт',
         'links_menu': get_menu(),
+        # 'object': Product.objects.filter(pk=pk).select_related().first(),
         'object': get_object_or_404(Product, pk=pk),
     }
     return render(request, 'mainapp/product.html', context)
