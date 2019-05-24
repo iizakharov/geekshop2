@@ -1,45 +1,29 @@
-pip3 install django==2.1
-
-
-sudo apt install python3-venv
-
-python3 -m venv django2
-
-source django_2.0/bin/activate
-
-source ../../django2/bin/activate
-
-pip3 install django==2.0
-
-pip3 install pillow
-
-python manage.py runserver
-
-
-python -m smtpd -n -c DebuggingServer localhost:25
-
-
-.sh
-
-source /home/user/Django_2/django2/bin/activate
-
-
-login:
-	django
-pass:
-	geekbrains
-
-postgresql
-mysql
-
-
-mainapp
+Илья Жуков:
+"... Это можно обойти, если задать natural_key следую документации, либо не включать профиль в дамп, а включить только shopuser модель"
 
 
 
-alias rundjango="python3 manage.py runserver"
-alias virtdjango="source /home/user/Django_2/django2/bin/activate"
-alias makemigrations="python3 manage.py makemigrations"
-alias migrate="python3 manage.py migrate"
+https://django-extensions.readthedocs.io/en/latest/
+
+sudo apt install python3-graphviz
 
 
+python manage.py runprofileserver --kcachegrind --prof-path=tmp/my-profile-data 0.0.0.0:8000
+
+siege -f urls.txt -d0 -r15 -c1
+
+siege -f /home/user/Django_2/lesson_6/step_1/geekshop/urls.txt -d1 -r29 -c1
+siege -f urls.txt -d1 -r11 -c1
+
+
+sysctl -a | grep net.core.somaxconn
+
+sysctl -w net.core.somaxconn=128
+
+excessive socket failure
+	SOMAXCONN - socket’s listen queue (def=128)
+
+	/etc/sysctl.conf
+	net.core.somaxconn=1024
+	
+	sysctl -p
