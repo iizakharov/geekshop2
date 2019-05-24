@@ -1,9 +1,12 @@
 import random
 
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
 from django.core.cache import cache
+from django.template.loader import render_to_string
+from django.views.decorators.cache import cache_page
 
 from mainapp.models import ProductCategory, Product
 
@@ -83,6 +86,7 @@ def index(request):
     return render(request, 'mainapp/index.html', context)
 
 
+# @cache_page(3600)
 def category(request, pk, page=1):
     if int(pk) == 0:
         category = {
@@ -109,7 +113,15 @@ def category(request, pk, page=1):
         'products': products,
     }
 
-    return render(request, 'mainapp/products_list.html', context)
+    if request.is_ajax():
+        print('ajax works')
+        result = render_to_string('mainapp/includes/inc__products_list_content.html',
+                                  context=context,
+                                  request=request)
+
+        return JsonResponse({'result': result})
+    else:
+        return render(request, 'mainapp/products_list.html', context)
 
 
 def products(request):
