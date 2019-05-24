@@ -2,12 +2,62 @@ import random
 
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.conf import settings
+from django.core.cache import cache
 
 from mainapp.models import ProductCategory, Product
 
 
+def get_category(pk):
+    if settings.LOW_CACHE:
+        key = f'category_{pk}'
+        category = cache.get(key)
+        if category is None:
+            category = get_object_or_404(ProductCategory, pk=pk)
+            cache.set(key, category)
+        return category
+    else:
+        return get_object_or_404(ProductCategory, pk=pk)
+
+
+def get_products():
+    if settings.LOW_CACHE:
+        key = 'products'
+        products = cache.get(key)
+        if products is None:
+            products = Product.objects.filter(is_active=True).select_related('category').order_by('price')
+            cache.set(key, products)
+        return products
+    else:
+        return Product.objects.filter(is_active=True).select_related('category').order_by('price')
+
+
+def get_product(pk):
+    if settings.LOW_CACHE:
+        key = f'product_{pk}'
+        product = cache.get(key)
+        if product is None:
+            product = get_object_or_404(Product, pk=pk)
+            cache.set(key, product)
+        return product
+    else:
+        return get_object_or_404(Product, pk=pk)
+
+
+def get_products_in_category(pk):
+    if settings.LOW_CACHE:
+        key = f'products_in_category{pk}'
+        products = cache.get(key)
+        if products is None:
+            products = Product.objects.filter(category__pk=pk, is_active=True, category__is_active=True).order_by('price')
+            cache.set(key, products)
+        return products
+    else:
+        return Product.objects.filter(category__pk=pk, is_active=True, category__is_active=True).order_by('price')
+
+
 def get_hot_product():
-    return random.choice(Product.objects.filter(is_active=True))
+    return random.choice(get_products())
 
 
 def get_same_products(hot_product):
@@ -15,7 +65,15 @@ def get_same_products(hot_product):
 
 
 def get_menu():
-    return ProductCategory.objects.filter(is_active=True)
+    if settings.LOW_CACHE:
+        key = 'links_menu'
+        links_menu = cache.get(key)
+        if links_menu is None:
+            links_menu = ProductCategory.objects.filter(is_active=True)
+            cache.set(key, links_menu)
+        return links_menu
+    else:
+        return ProductCategory.objects.filter(is_active=True)
 
 
 def index(request):
@@ -31,10 +89,10 @@ def category(request, pk, page=1):
             'pk': 0,
             'name': 'все',
         }
-        products = Product.objects.filter(is_active=True, category__is_active=True).order_by('price')
+        products = get_products()
     else:
-        category = get_object_or_404(ProductCategory, pk=pk)
-        products = category.product_set.filter(is_active=True).order_by('price')
+        category = get_category(pk)
+        products = get_products_in_category(pk)
 
     paginator = Paginator(products, 2)
     try:
@@ -71,8 +129,7 @@ def product(request, pk):
     context = {
         'title': 'продукт',
         'links_menu': get_menu(),
-        # 'object': Product.objects.filter(pk=pk).select_related().first(),
-        'object': get_object_or_404(Product, pk=pk),
+        'object': get_product(pk),
     }
     return render(request, 'mainapp/product.html', context)
 
