@@ -6,7 +6,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
 from django.core.cache import cache
 from django.template.loader import render_to_string
-from django.views.decorators.cache import cache_page
+from django.views.decorators.cache import cache_page, never_cache
 
 from mainapp.models import ProductCategory, Product
 
@@ -79,6 +79,7 @@ def get_menu():
         return ProductCategory.objects.filter(is_active=True)
 
 
+@never_cache
 def index(request):
     context = {
         'page_title': 'главная',

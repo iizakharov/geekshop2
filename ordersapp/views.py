@@ -85,6 +85,9 @@ class OrderRead(DetailView):
         context['title'] = 'заказ/просмотр'
         return context
 
+    # def get_queryset(self):
+    #     return Order.objects.filter(pk=int(self.kwargs['pk'])).select_related()
+
 
 class OrderItemsUpdate(UpdateView):
     model = Order
