@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff552b8e-960c-48e6-9207-1085c22d0627" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img src=&quot;/static/</find>
+      <find>img</find>
+      <find>mainapp</find>
+      <find>adminapp</find>
+      <find>basket</find>
+      <find>basket_container</find>
+      <find>basket_list</find>
+      <find>product.</find>
+      <find>t_href</find>
+      <find>targteHref</find>
+      <find>{% url</find>
+      <find>admin:</find>
+      <find>%}&gt;</find>
+      <find>'admin</find>
+      <find>b&gt;</find>
+      <find>ProductCategory.objects.all()</find>
+      <find>'admin:</find>
+      <find>main:category</find>
+      <find>/media/{{ hot_product.image }}</find>
+      <find>get_basket(request)</find>
+      <find>SOCIAL_AUTH</find>
+      <find>authapp</find>
+      <find>formset</find>
+      <find>formset_factory</find>
+      <find>totalFORMS</find>
+      <find>totalForms</find>
+      <find>orderTotalCost</find>
+      <find>orderTotalQuantity</find>
+      <find>order_total_quantity</find>
+      <find>192.168.0.98</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>img src=&quot;{% static '</replace>
+      <replace>authapp</replace>
+      <replace>basketapp</replace>
+      <replace>basket-container</replace>
+      <replace>basket-list</replace>
+      <replace>object.</replace>
+      <replace>targteHref</replace>
+      <replace>target</replace>
+      <replace>adminapp</replace>
+      <replace>&quot;{% url</replace>
+      <replace>myadmin:</replace>
+      <replace>%}&quot;&gt;</replace>
+      <replace>%#}&quot;&gt;</replace>
+      <replace>'myadmin</replace>
+      <replace>get_menu()</replace>
+      <replace>'myadmin:</replace>
+      <replace>{{ hot_product.image|media_folder_products }}</replace>
+      <replace>ordersapp</replace>
+      <replace>totalForms</replace>
+      <replace>orderTotalQuantity</replace>
+      <replace>192.168.89.135</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/mainapp/management/commands</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/authapp/urls.py" />
+        <option value="$PROJECT_DIR$/authapp/templates/authapp/verification.html" />
+        <option value="$PROJECT_DIR$/basketapp/templates/basketapp/base.html" />
+        <option value="$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__basket_list.html" />
+        <option value="$PROJECT_DIR$/mainapp/management/commands/update_db.py" />
+        <option value="$PROJECT_DIR$/authapp/models.py" />
+        <option value="$PROJECT_DIR$/authapp/forms.py" />
+        <option value="$PROJECT_DIR$/authapp/templates/authapp/update.html" />
+        <option value="$PROJECT_DIR$/geekshop/vk.json" />
+        <option value="$PROJECT_DIR$/geekshop/google+.json" />
+        <option value="$PROJECT_DIR$/geekshop/social_auth.json" />
+        <option value="$PROJECT_DIR$/authapp/pipeline.py" />
+        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order__summary.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_confirm_delete.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_list.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_actions.html" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html" />
+        <option value="$PROJECT_DIR$/static/js/basket_scripts.js" />
+        <option value="$PROJECT_DIR$/ordersapp/urls.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/mainapp/management/commands/fill_db.py" />
+        <option value="$PROJECT_DIR$/static/js/orders_scripts.js" />
+        <option value="$PROJECT_DIR$/geekshop/urls.py" />
+        <option value="$PROJECT_DIR$/mainapp/context_processors.py" />
+        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/product.html" />
+        <option value="$PROJECT_DIR$/authapp/templates/authapp/login.html" />
+        <option value="$PROJECT_DIR$/urls.txt" />
+        <option value="$PROJECT_DIR$/ordersapp/forms.py" />
+        <option value="$PROJECT_DIR$/mainapp/models.py" />
+        <option value="$PROJECT_DIR$/basketapp/models.py" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html" />
+        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/includes/dsfsf.html" />
+        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/products_list.html" />
+        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/base.html" />
+        <option value="$PROJECT_DIR$/static/js/main_scripts.js" />
+        <option value="$PROJECT_DIR$/mainapp/urls.py" />
+        <option value="$PROJECT_DIR$/mainapp/views.py" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/order_detail.html" />
+        <option value="$PROJECT_DIR$/ordersapp/views.py" />
+        <option value="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html" />
+        <option value="$PROJECT_DIR$/authapp/views.py" />
+        <option value="$PROJECT_DIR$/basketapp/views.py" />
+        <option value="$PROJECT_DIR$/adminapp/forms.py" />
+        <option value="$PROJECT_DIR$/adminapp/views.py" />
+        <option value="$PROJECT_DIR$/mainapp/management/commands/learn_db.py" />
+        <option value="$PROJECT_DIR$/ordersapp/models.py" />
+        <option value="$PROJECT_DIR$/mainapp/tests.py" />
+        <option value="$PROJECT_DIR$/authapp/tests.py" />
+        <option value="$PROJECT_DIR$/mainapp/tests_products.py" />
+        <option value="$PROJECT_DIR$/geekshop/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="95" />
+    <option name="y" value="46" />
+    <option name="width" value="1323" />
+    <option name="height" value="920" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="geekshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geekshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geekshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geekshop" type="462c0819:PsiDirectoryNode" />
+              <item name="geekshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/ordersapp/templates/ordersapp" />
+      <recent name="$PROJECT_DIR$/ordersapp/templates/ordersapp/includes" />
+      <recent name="$PROJECT_DIR$/ordersapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PyProjects\Lesson_8\geekshop\adminapp\templates\mainapp" />
+      <recent name="C:\PyProjects\Lesson_8\geekshop\adminapp\templates\authapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff552b8e-960c-48e6-9207-1085c22d0627" name="Default Changelist" comment="" />
+      <created>1553182616570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553182616570</updated>
+      <workItem from="1554389212245" duration="7000" />
+      <workItem from="1554389255482" duration="66000" />
+      <workItem from="1554401303856" duration="8000" />
+      <workItem from="1554401388222" duration="3000" />
+      <workItem from="1554734254690" duration="367000" />
+      <workItem from="1554734702735" duration="312000" />
+      <workItem from="1554740189952" duration="6245000" />
+      <workItem from="1554997840565" duration="20000" />
+      <workItem from="1554999206439" duration="7158000" />
+      <workItem from="1555346467293" duration="4561000" />
+      <workItem from="1556639849189" duration="4000" />
+      <workItem from="1556641077393" duration="6306000" />
+      <workItem from="1556647731539" duration="74000" />
+      <workItem from="1557238930153" duration="3016000" />
+      <workItem from="1557244812088" duration="7429000" />
+      <workItem from="1557846210003" duration="7105000" />
+      <workItem from="1558109413991" duration="5367000" />
+      <workItem from="1558454301611" duration="8350000" />
+      <workItem from="1558711812562" duration="7968000" />
+      <workItem from="1559058814137" duration="8248000" />
+    </task>
+    <task id="LOCAL-00020" summary="lesson 6:&#10;    - basket methods&#10;    - hot_product">
+      <created>1554395259359</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1554395259359</updated>
+    </task>
+    <task id="LOCAL-00021" summary="lesson 6:&#10;    - basket methods&#10;    - hot_product&#10;    - basket page&#10;    - product page">
+      <created>1554397362111</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1554397362111</updated>
+    </task>
+    <task id="LOCAL-00022" summary="lesson 6:&#10;    - basket methods&#10;    - hot_product&#10;    - basket page&#10;    - product page&#10;    - @login_required">
+      <created>1554399110522</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1554399110522</updated>
+    </task>
+    <task id="LOCAL-00023" summary="lesson 6:&#10;    - basket methods&#10;    - hot_product&#10;    - basket page&#10;    - product page&#10;    - @login_required&#10;    - AJAX">
+      <created>1554401178593</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1554401178593</updated>
+    </task>
+    <task id="LOCAL-00024" summary="lesson 7:&#10;    - adminapp">
+      <created>1554740430471</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1554740430471</updated>
+    </task>
+    <task id="LOCAL-00025" summary="lesson 7:&#10;    - adminapp&#10;    - index page">
+      <created>1554741460422</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1554741460422</updated>
+    </task>
+    <task id="LOCAL-00026" summary="lesson 7:&#10;    - adminapp&#10;    - index page&#10;    - categories page">
+      <created>1554742171578</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1554742171578</updated>
+    </task>
+    <task id="LOCAL-00027" summary="lesson 7:&#10;    - adminapp&#10;    - index page&#10;    - categories page&#10;    - category products">
+      <created>1554743446708</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1554743446708</updated>
+    </task>
+    <task id="LOCAL-00028" summary="lesson 7:&#10;    - adminapp&#10;    - index page&#10;    - categories page&#10;    - category products&#10;    - link to admin">
+      <created>1554743755712</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1554743755712</updated>
+    </task>
+    <task id="LOCAL-00029" summary="lesson 7:&#10;    - adminapp&#10;    - index page&#10;    - categories page&#10;    - category products&#10;    - link to admin&#10;    - user C_UD">
+      <created>1554745451019</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1554745451019</updated>
+    </task>
+    <task id="LOCAL-00030" summary="lesson 7:&#10;    - adminapp&#10;    - index page&#10;    - categories page&#10;    - category products&#10;    - link to admin&#10;    - user C_UD&#10;    - productcategory UPDATE">
+      <created>1554746517419</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1554746517419</updated>
+    </task>
+    <task id="LOCAL-00031" summary="lesson 8:&#10;    - adminapp&#10;        - Product&#10;        - ProductCategory">
+      <created>1555001918021</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1555001918021</updated>
+    </task>
+    <task id="LOCAL-00032" summary="lesson 8:&#10;    - adminapp&#10;        - Product&#10;        - ProductCategory&#10;    - Paginator">
+      <created>1555003594702</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1555003594702</updated>
+    </task>
+    <task id="LOCAL-00033" summary="lesson 8:&#10;    - adminapp&#10;        - Product&#10;        - ProductCategory&#10;    - Paginator&#10;    - CBV&#10;        - ListView">
+      <created>1555004137962</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1555004137962</updated>
+    </task>
+    <task id="LOCAL-00034" summary="lesson 8:&#10;    - adminapp&#10;        - Product&#10;        - ProductCategory&#10;    - Paginator&#10;    - CBV&#10;        - ListView&#10;        - ProductCategoryCreateView&#10;        - ProductCategoryUpdateView">
+      <created>1555005096118</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1555005096118</updated>
+    </task>
+    <task id="LOCAL-00035" summary="lesson 8:&#10;    - adminapp&#10;        - Product&#10;        - ProductCategory&#10;    - Paginator&#10;    - CBV&#10;        - ListView&#10;        - ProductCategoryCreateView&#10;        - ProductCategoryUpdateView&#10;        - ProductCategoryDeleteView&#10;        - ProductDetailView">
+      <created>1555005528879</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1555005528879</updated>
+    </task>
+    <task id="LOCAL-00036" summary="lesson 8:&#10;    - adminapp&#10;        - Product&#10;        - ProductCategory&#10;    - Paginator&#10;    - CBV&#10;        - ListView&#10;        - ProductCategoryCreateView&#10;        - ProductCategoryUpdateView&#10;        - ProductCategoryDeleteView&#10;        - ProductDetailView&#10;        - media_folder_products">
+      <created>1555006466672</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1555006466672</updated>
+    </task>
+    <task id="LOCAL-00037" summary="lesson 2.1&#10;    - bash">
+      <created>1555346539812</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1555346539812</updated>
+    </task>
+    <task id="LOCAL-00038" summary="lesson 2.1&#10;    - bash&#10;    - dumpdata">
+      <created>1555346954890</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1555346954890</updated>
+    </task>
+    <task id="LOCAL-00039" summary="lesson 2.1&#10;    - bash&#10;    - dumpdata&#10;    - email check">
+      <created>1555349779029</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1555349779029</updated>
+    </task>
+    <task id="LOCAL-00040" summary="lesson 2.1&#10;    - bash&#10;    - dumpdata&#10;    - email check&#10;    - context processor for basket">
+      <created>1555350627160</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1555350627160</updated>
+    </task>
+    <task id="LOCAL-00041" summary="lesson 2.2&#10;    - google auth">
+      <created>1556643317585</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1556643317585</updated>
+    </task>
+    <task id="LOCAL-00042" summary="lesson 2.2&#10;    - google auth&#10;    - update_db">
+      <created>1556645043987</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1556645043987</updated>
+    </task>
+    <task id="LOCAL-00043" summary="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile">
+      <created>1556645720269</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1556645720269</updated>
+    </task>
+    <task id="LOCAL-00044" summary="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile&#10;    - ShopUserProfile update">
+      <created>1556646381700</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1556646381700</updated>
+    </task>
+    <task id="LOCAL-00045" summary="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile&#10;    - ShopUserProfile update&#10;    - pipeline">
+      <created>1556647456112</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1556647456112</updated>
+    </task>
+    <task id="LOCAL-00046" summary="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile&#10;    - ShopUserProfile update&#10;    - pipeline&#10;    - avatar download">
+      <created>1557242571597</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1557242571597</updated>
+    </task>
+    <task id="LOCAL-00047" summary="lesson 2.3&#10;    - ordersapp">
+      <created>1557246363791</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1557246363791</updated>
+    </task>
+    <task id="LOCAL-00048" summary="lesson 2.3&#10;    - ordersapp&#10;    - OrderList">
+      <created>1557247730897</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1557247730897</updated>
+    </task>
+    <task id="LOCAL-00049" summary="lesson 2.3&#10;    - ordersapp&#10;    - OrderList&#10;    - inlineformset.save()">
+      <created>1557250398173</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1557250398173</updated>
+    </task>
+    <task id="LOCAL-00050" summary="lesson 2.3&#10;    - ordersapp&#10;    - OrderList&#10;    - inlineformset.save()&#10;    - Order CRUD">
+      <created>1557252252360</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1557252252360</updated>
+    </task>
+    <task id="LOCAL-00051" summary="lesson 2.4&#10;    - product quantity update">
+      <created>1557851367226</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1557851367228</updated>
+    </task>
+    <task id="LOCAL-00052" summary="lesson 2.4&#10;    - product quantity update&#10;    - signals">
+      <created>1557852193401</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1557852193401</updated>
+    </task>
+    <task id="LOCAL-00053" summary="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form">
+      <created>1557853197228</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1557853197228</updated>
+    </task>
+    <task id="LOCAL-00054" summary="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form&#10;    - orders_script.js">
+      <created>1557855192267</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1557855192267</updated>
+    </task>
+    <task id="LOCAL-00055" summary="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form&#10;    - orders_script.js&#10;    - jquery.formset.js">
+      <created>1557856027375</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1557856027375</updated>
+    </task>
+    <task id="LOCAL-00056" summary="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form&#10;    - orders_script.js&#10;    - jquery.formset.js&#10;    - homework start">
+      <created>1557856236955</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1557856236955</updated>
+    </task>
+    <task id="LOCAL-00057" summary="lesson 2.5&#10;    - price load">
+      <created>1558111014560</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1558111014560</updated>
+    </task>
+    <task id="LOCAL-00058" summary="lesson 2.5&#10;    - price load&#10;    - Product.get_items()">
+      <created>1558111297257</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1558111297257</updated>
+    </task>
+    <task id="LOCAL-00059" summary="lesson 2.6&#10;    - collectstatic">
+      <created>1558456009711</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1558456009713</updated>
+    </task>
+    <task id="LOCAL-00060" summary="lesson 2.6&#10;    - collectstatic&#10;    - before siege test">
+      <created>1558459615406</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1558459615406</updated>
+    </task>
+    <task id="LOCAL-00061" summary="lesson 2.7&#10;    - @cached_property">
+      <created>1558714808021</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1558714808022</updated>
+    </task>
+    <task id="LOCAL-00062" summary="lesson 2.7&#10;    - @cached_property&#10;    - {% with ... %}">
+      <created>1558715819437</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1558715819437</updated>
+    </task>
+    <task id="LOCAL-00063" summary="lesson 2.7&#10;    - @cached_property&#10;    - {% with ... %}&#10;    - template cache">
+      <created>1558718198693</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1558718198694</updated>
+    </task>
+    <task id="LOCAL-00064" summary="lesson 2.7&#10;    - @cached_property&#10;    - {% with ... %}&#10;    - template cache&#10;    - view cache (ajax)">
+      <created>1558720734477</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1558720734477</updated>
+    </task>
+    <task id="LOCAL-00065" summary="lesson 2.8&#10;    - conditional expressions">
+      <created>1559064863830</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1559064863831</updated>
+    </task>
+    <task id="LOCAL-00066" summary="lesson 2.8&#10;    - conditional expressions&#10;    - first test">
+      <created>1559065649138</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1559065649138</updated>
+    </task>
+    <task id="LOCAL-00067" summary="lesson 2.8&#10;    - conditional expressions&#10;    - first test&#10;    - authapp test">
+      <created>1559066604542</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1559066604542</updated>
+    </task>
+    <task id="LOCAL-00068" summary="lesson 2.8&#10;    - conditional expressions&#10;    - first test&#10;    - authapp test&#10;    - models test">
+      <created>1559067329630</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1559067329630</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="72614000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1789" height="1033" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14457831" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32743362" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32947975" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32947975" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.3276644" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Remote Host" order="5" weight="0.32872728" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile&#10;    - ShopUserProfile update" />
+    <MESSAGE value="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile&#10;    - ShopUserProfile update&#10;    - pipeline" />
+    <MESSAGE value="lesson 2.2&#10;    - google auth&#10;    - update_db&#10;    - ShopUserProfile&#10;    - ShopUserProfile update&#10;    - pipeline&#10;    - avatar download" />
+    <MESSAGE value="lesson 2.3&#10;    - ordersapp" />
+    <MESSAGE value="lesson 2.3&#10;    - ordersapp&#10;    - OrderList" />
+    <MESSAGE value="lesson 2.3&#10;    - ordersapp&#10;    - OrderList&#10;    - inlineformset.save()" />
+    <MESSAGE value="lesson 2.3&#10;    - ordersapp&#10;    - OrderList&#10;    - inlineformset.save()&#10;    - Order CRUD" />
+    <MESSAGE value="lesson 2.4&#10;    - product quantity update" />
+    <MESSAGE value="lesson 2.4&#10;    - product quantity update&#10;    - signals" />
+    <MESSAGE value="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form" />
+    <MESSAGE value="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form&#10;    - orders_script.js" />
+    <MESSAGE value="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form&#10;    - orders_script.js&#10;    - jquery.formset.js" />
+    <MESSAGE value="lesson 2.4&#10;    - product quantity update&#10;    - signals&#10;    - price in orderitem form&#10;    - orders_script.js&#10;    - jquery.formset.js&#10;    - homework start" />
+    <MESSAGE value="lesson 2.5&#10;    - price load" />
+    <MESSAGE value="lesson 2.5&#10;    - price load&#10;    - Product.get_items()" />
+    <MESSAGE value="lesson 2.6&#10;    - collectstatic" />
+    <MESSAGE value="lesson 2.6&#10;    - collectstatic&#10;    - before siege test" />
+    <MESSAGE value="lesson 2.7&#10;    - @cached_property" />
+    <MESSAGE value="lesson 2.7&#10;    - @cached_property&#10;    - {% with ... %}" />
+    <MESSAGE value="lesson 2.7&#10;    - @cached_property&#10;    - {% with ... %}&#10;    - template cache" />
+    <MESSAGE value="lesson 2.7&#10;    - @cached_property&#10;    - {% with ... %}&#10;    - template cache&#10;    - view cache (ajax)" />
+    <MESSAGE value="lesson 2.8&#10;    - conditional expressions" />
+    <MESSAGE value="lesson 2.8&#10;    - conditional expressions&#10;    - first test" />
+    <MESSAGE value="lesson 2.8&#10;    - conditional expressions&#10;    - first test&#10;    - authapp test" />
+    <MESSAGE value="lesson 2.8&#10;    - conditional expressions&#10;    - first test&#10;    - authapp test&#10;    - models test" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 2.8&#10;    - conditional expressions&#10;    - first test&#10;    - authapp test&#10;    - models test" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc_order__summary.html" />
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_confirm_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_actions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3577">
+          <caret line="429" column="19" selection-start-line="429" selection-start-column="8" selection-end-line="429" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/db/models/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="44" column="11" selection-start-line="44" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="285" column="21" selection-start-line="285" selection-start-column="11" selection-end-line="285" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.formset.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/basket_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="556" column="58" selection-start-line="556" selection-start-column="17" selection-end-line="556" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/management/commands/fill_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/orders_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#271#305#0" />
+            <element signature="e#342#806#0" />
+            <element signature="e#763#806#0" />
+            <element signature="e#850#1587#0" />
+            <element signature="e#910#957#0" />
+            <element signature="e#1460#1587#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basketapp/templates/basketapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basketapp/templates/basketapp/includes/inc__basket_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__main_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/templates/authapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basketapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/products_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc__products_list_content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/main_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/views/generic/detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/includes/inc__order_summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/templates/ordersapp/order_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="88" column="81" lean-forward="true" selection-start-line="87" selection-start-column="6" selection-end-line="88" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/db/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geekshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#631#1" />
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basketapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#1094#1201#0" />
+            <element signature="e#1289#1788#0" />
+            <element signature="e#1411#1473#0" />
+            <element signature="e#1540#1630#0" />
+            <element signature="e#1747#1787#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#840#1058#0" />
+            <element signature="e#1018#1058#0" />
+            <element signature="e#1134#1377#0" />
+            <element signature="e#1223#1303#0" />
+            <element signature="e#1455#1759#0" />
+            <element signature="e#1584#1693#0" />
+            <element signature="e#1796#2219#0" />
+            <element signature="e#1833#2012#0" />
+            <element signature="e#1935#2012#0" />
+            <element signature="e#2080#2150#0" />
+            <element signature="e#2260#2783#0" />
+            <element signature="e#2351#2551#0" />
+            <element signature="e#2474#2551#0" />
+            <element signature="e#2638#2714#0" />
+            <element signature="e#2824#3258#0" />
+            <element signature="e#2909#3092#0" />
+            <element signature="e#2909#2924#0" />
+            <element signature="e#3107#3189#0" />
+            <element signature="e#3310#3452#0" />
+            <element signature="e#3846#4136#0" />
+            <element signature="e#3980#4136#0" />
+            <element signature="e#4176#4761#0" />
+            <element signature="e#4270#4509#0" />
+            <element signature="e#4362#4509#0" />
+            <element signature="e#4597#4693#0" />
+            <element signature="e#4805#4820#0" />
+            <element signature="e#4860#5506#0" />
+            <element signature="e#4952#5240#0" />
+            <element signature="e#5069#5240#0" />
+            <element signature="e#5321#5438#0" />
+            <element signature="e#5546#6010#0" />
+            <element signature="e#5630#5820#0" />
+            <element signature="e#5835#5942#0" />
+            <element signature="e#6064#6230#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/management/commands/update_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordersapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="72" column="80" selection-start-line="72" selection-start-column="80" selection-end-line="72" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/management/commands/learn_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#432#877#0" />
+            <element signature="e#476#559#0" />
+            <element signature="e#1012#1549#0" />
+            <element signature="e#1096#1549#0" />
+            <element signature="e#1311#1549#0" />
+            <element signature="e#1610#1695#0" />
+            <element signature="e#1797#1872#0" />
+            <element signature="e#1902#2546#0" />
+            <element signature="e#1939#2360#0" />
+            <element signature="e#2036#2360#0" />
+            <element signature="e#2110#2222#0" />
+            <element signature="e#2257#2360#0" />
+            <element signature="e#2424#2484#0" />
+            <element signature="e#2589#3360#0" />
+            <element signature="e#2626#3031#0" />
+            <element signature="e#2885#3031#0" />
+            <element signature="e#3050#3182#0" />
+            <element signature="e#3198#3300#0" />
+            <element signature="e#3411#3961#0" />
+            <element signature="e#3424#3824#0" />
+            <element signature="e#3562#3698#0" />
+            <element signature="e#3860#3961#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#220#755#0" />
+            <element signature="e#794#1731#0" />
+            <element signature="e#2158#2785#0" />
+            <element signature="e#2827#3428#0" />
+            <element signature="e#3472#4996#0" />
+            <element signature="e#5076#5593#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="84" column="19" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/tests_products.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geekshop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="100" column="68" selection-start-line="100" selection-start-column="68" selection-end-line="100" selection-end-column="68" />
+          <folding>
+            <element signature="e#309#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
